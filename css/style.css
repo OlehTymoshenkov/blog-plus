@@ -3,7 +3,7 @@ body {
     /*width: 1920px; /*для Pixel Perfect*/
     font-style: normal;
     font-weight: normal;
-    font-family: 'Roboto'
+    font-family: Roboto, Arial, sans-serif
 }
 .container {
     max-width: 1252px;
@@ -118,7 +118,7 @@ body {
 .main__heading {
     position: relative;
     line-height: 24px;
-    margin-bottom: 8px;
+    margin-bottom: calc(35px + 8px);
     margin-top: 64px
 }
 .main__heading::after {
@@ -136,7 +136,8 @@ body {
     margin-bottom: calc(35px + 8px)
 }
 .main__heading:nth-of-type(3) {
-    margin-top: calc(64px - 20px)
+    margin-top: calc(64px - 20px);
+    margin-bottom: calc(40px + 8px)
 }
 .main__heading:nth-of-type(4) {
     margin-top: calc(104px - 33px);
@@ -146,9 +147,6 @@ body {
 }
 .main__heading:nth-of-type(4):after {
     transform: translateX(calc((1252px/2) - 50%))
-}
-.module-grid {
-    margin-top: calc(35px + 8px)
 }
 .main__float {
     background-color: #e2e2e2;
@@ -163,10 +161,10 @@ body {
 .main__review_part {
     padding-top: 13px
 }
-.main__review:first-child {
+.main__review:nth-child(6) {
     padding-top: 0
 }
-.main__review:nth-child(2), .main__review:last-child {
+.main__review:nth-child(7), .main__review:nth-child(8) {
     border-top: 1px solid #c6c6c6
 }
 .main__date {

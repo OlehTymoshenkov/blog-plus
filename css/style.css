@@ -46,10 +46,10 @@ body {
     content: '';
     position: absolute;
     z-index: 2;
-    top: 6px;
+    top: 5px;
     right: -1px;
     width: 3px;
-    height: 23.58px;
+    height: 17px;
     background-color: #333
 }
 .header__item:last-child::before {
@@ -69,7 +69,7 @@ body {
     text-decoration: underline
 }
 .header__link {
-    padding: 8px 17px 9px 17px
+    padding: 2px 17px 3px 17px
 }
 .header__link, .header__sublink, .header__enter {
     text-decoration: none;
@@ -85,7 +85,7 @@ body {
     display: none;
     top: 100%;
     left: 0;
-    margin-top: 9px;
+    margin-top: 4px;
     padding: 0;
     list-style-type: none;
     border: 1px solid #ebebeb;
@@ -147,6 +147,10 @@ body {
 }
 .main__heading:nth-of-type(4):after {
     transform: translateX(calc((1252px/2) - 50%))
+}
+.main__heading:nth-of-type(5) {
+    margin-top: calc(411px - 378px);
+    margin-bottom: calc(40px - 21px)
 }
 .main__float {
     background-color: #e2e2e2;
@@ -229,4 +233,193 @@ body {
     width: 259px;
     background-image: url("../images/image.png")
 }
-
+.main__title {
+    margin-top: 21px;
+    margin-bottom: 8px
+}
+.main__title, .main__input, .main__select, .main__check, .main__textarea {
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 13px
+}
+.main__input, .main__select {
+    height: 42px;
+    color: #333;
+    border: 2px solid #a0a0a0;
+    outline: none;
+    padding: 0 0 0 16px;
+    width: 100%
+}
+.main__select {
+    padding-left: 15px;
+    width: calc(100% + 15px);
+    height: 46px
+}
+.main__input::placeholder, .main__textarea::placeholder {
+    color: #97a1aa
+}
+.main__input:focus, .main__select:focus {
+    background-color: #e9f8ff
+}
+.with-lock, .with-phone-call {
+    position: relative
+}
+.with-phone-call {
+    margin-bottom: calc(37px - 21px)
+}
+.with-lock .main__input, .with-phone-call .main__select {
+    padding-left: 46px
+}
+.main__input {
+    width: calc(100% - 16px - 4px)
+}
+.with-lock .main__input {
+    width: calc(100% - 46px - 4px)
+}
+.with-lock img, .with-phone-call img, .with-chat-comment img {
+    position: absolute;
+    z-index: 2;
+    top: 10px
+}
+.with-lock img {
+    left: 19px
+}
+.with-phone-call img, .with-chat-comment img {
+    left: 16px
+}
+#main__lock-2, #main__phone-call-2 {
+    display: none
+}
+.main__input:focus ~ #main__lock-1, .main__select:focus ~ #main__phone-call-1 {
+    display: none
+}
+.main__input:focus ~ #main__lock-2, .main__select:focus ~ #main__phone-call-2 {
+    display: block
+}
+.main__check {
+    display: inline-block;
+    margin-right: 31px
+}
+.check {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    border: 2px solid #9c9dcd;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-right: 7px;
+    position: relative
+}
+.check-radio {
+    border-radius: 50%
+}
+.check::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    background-color: #52359d;
+    position: absolute;
+    display: none;
+    top: 3px;
+    left: 3px
+}
+.check-radio::before {
+    border-radius: 50%
+}
+.checkbox:checked ~ .check::before, .radio:checked ~ .check::before {
+    display: block
+}
+.checkbox, .radio {
+    display: none
+}
+.main__textarea {
+    color: #333;
+    border: 2px solid #a0a0a0;
+    outline: none;
+    resize: none;
+    padding: 13px 15px;
+    height: 167px;
+    width: calc(100% - (15px*2) - (2px*2))
+}
+.with-chat-comment {
+    position: relative
+}
+#main__chat-comment-2 {
+    display: none
+}
+.with-chat-comment .main__textarea {
+    width: calc(100% - 47px - 15px - (2px*2));
+    padding-left: 47px
+}
+.main__textarea::placeholder {
+    line-height: 13px
+}
+.main__check {
+    text-align: center;
+}
+.buttons {
+    margin-top: 20px;
+    height: 43px
+}
+.main__submit, .main__reset, .main__button {
+    margin-right: 20px;
+    background-color: #fff;
+    font-size: 14px;
+    border: 1px solid #999
+}
+.upload-file__text {
+    font-size: 14px
+}
+.main__submit {
+    width: 102px
+}
+.main__reset {
+    width: 93px
+}
+.main__button {
+    width: 107px
+}
+.upload-file__input {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    width: 0.4px;
+    height: 0.4px
+}
+.upload-file__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 172px;
+    border: 1px solid #999;
+    padding: 8px 33px 9px 25px;
+    cursor: pointer
+}
+.upload-file__icon {
+    width: 20px;
+    height: 24px;
+    margin-right: 10px
+}
+.upload-file__label:active, .main__submit:active {
+    background-color: #333;
+    border-color: #333
+}
+.upload-file__label:active .upload-file__icon {
+    filter: invert(100%)
+}
+.upload-file__label:active .upload-file__text, .main__submit:active {
+    color: #999
+}
+.upload-file__label:hover, .main__submit:hover {
+    background-color: #52359d;
+    border-color: #52359d
+}
+.upload-file__label:hover .upload-file__icon {
+    filter: invert(100%)
+}
+.upload-file__label:hover .upload-file__text, .main__submit:hover {
+    color: #fff
+}

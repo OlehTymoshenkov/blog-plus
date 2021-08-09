@@ -1,9 +1,10 @@
 <!doctype html>
-<html lang="zxx">
+<html lang="zxx" xmlns="http://www.w3.org/1999/html">
     <head>
         <!--Служебная информация-->
         <meta charset="utf-8">
         <title>BLOG+</title>
+        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/module-grid.css">
         <link rel="stylesheet" href="css/fonts.css">
         <link rel="stylesheet" href="css/style.css">
@@ -274,8 +275,129 @@
                             </p>
                         </div>
                     </div>
+                    <h2 class="main__heading">Элементы формы</h2>
+                    <form class="main__form">
+                        <div class="module-grid">
+                            <div class="module-grid__cell-3">
+                                <div class="main__title">Lorem ipsum</div>
+                                <input class="main__input" type="text" placeholder="Input text placeholder">
+                            </div>
+                        </div>
+                        <div class="module-grid">
+                            <div class="module-grid__cell-3">
+                                <div class="main__title">Lorem ipsum</div>
+                                <div class="with-lock">
+                                    <input class="main__input" type="text" placeholder="Input text placeholder">
+                                    <img id="main__lock-1" src="images/lock_1.png" alt="">
+                                    <img id="main__lock-2" src="images/lock_2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="module-grid module-grid--gutters">
+                            <div class="module-grid__cell-3">
+                                <div class="main__title">Lorem ipsum</div>
+                                <select class="main__select">
+                                    <option disabled selected>Select items</option>
+                                </select>
+                            </div>
+                            <div class="module-grid__cell-3">
+                                <div class="main__title">Lorem ipsum</div>
+                                <div class="with-phone-call">
+                                    <select class="main__select">
+                                        <option disabled selected>Select items</option>
+                                    </select>
+                                    <img id="main__phone-call-1" src="images/phone-call_1.png" alt="">
+                                    <img id="main__phone-call-2" src="images/phone-call_2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="module-grid">
+                            <div class="module-grid__cell-6">
+                                <div class="main__title">Lorem ipsum</div>
+                                <div class="main__check">
+                                    <label class="main__label">
+                                        <input class="checkbox" type="checkbox">
+                                        <span class="check"></span>
+                                        Lorem ipsum dolar
+                                    </label>
+                                </div>
+                                <div class="main__check">
+                                    <label class="main__label">
+                                        <input class="checkbox" type="checkbox">
+                                        <span class="check"></span>
+                                        Lorem ipsum dolar
+                                    </label>
+                                </div>
+                                <div class="main__check">
+                                    <label class="main__label">
+                                        <input class="checkbox" type="checkbox">
+                                        <span class="check"></span>
+                                        Lorem ipsum dolar
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="module-grid__cell-6">
+                                <div class="main__title">Lorem ipsum</div>
+                                <div class="main__check">
+                                    <label class="main__label">
+                                        <input class="radio" type="radio" name="test">
+                                        <span class="check check-radio"></span>
+                                        Lorem ipsum dolar
+                                    </label>
+                                </div>
+                                <div class="main__check">
+                                    <label class="main__label">
+                                        <input class="radio" type="radio" name="test">
+                                        <span class="check check-radio"></span>
+                                        Lorem ipsum dolar
+                                    </label>
+                                </div>
+                                <div class="main__check">
+                                    <label class="main__label">
+                                        <input class="radio" type="radio" name="test">
+                                        <span class="check check-radio"></span>
+                                        Lorem ipsum dolar
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="module-grid">
+                            <div class="module-grid__cell-6">
+                                <div class="main__title">Lorem ipsum</div>
+                                <textarea class="main__textarea" id="main__textarea-1" placeholder="Textarea placeholder"></textarea>
+                            </div>
+                        </div>
+                        <div class="module-grid">
+                            <div class="module-grid__cell-6">
+                                <div class="main__title">Lorem ipsum</div>
+                                <div class="with-chat-comment">
+                                    <textarea class="main__textarea" id="main__textarea-2" placeholder="Textarea placeholder"></textarea>
+                                    <img id="main__chat-comment-1" src="images/chat-comment_1.png">
+                                    <img id="main__chat-comment-2" src="images/chat-comment_2.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="module-grid">
+                            <div class="module-grid__cell-6">
+                                <div class="flex__container buttons">
+                                    <input class="main__submit" type="submit" value="SUBMIT">
+                                    <input class="main__reset" type="reset" value="RESET">
+                                    <input class="main__button" type="button" value="BUTTON">
+                                    <div class="upload-file__wrapper">
+                                        <input class="upload-file__input" id="upload-file__input_1" type="file" name="files[]" multiple>
+                                        <label class="upload-file__label" for="upload-file__input_1">
+                                            <img class="upload-file__icon" src="images/upload.png">
+                                            <span class="upload-file__text">UPLOAD FILE</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </main>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
